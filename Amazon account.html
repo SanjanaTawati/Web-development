@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Amazon Account</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+        }
+
+        .container {
+            width: 350px;
+            margin: 50px auto;
+            padding: 20px 25px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: white;
+        }
+
+        .container h2 {
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+            border: 1px solid #a6a6a6;
+            border-radius: 3px;
+            transition: 0.3s ease;
+        }
+
+        /* 🔹 Blue glow when input field is focused */
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            outline: none;
+            box-shadow: 0 0 8px #2196f3;
+            border-color: #2196f3;
+        }
+
+        small {
+            font-size: 12px;
+            color: #555;
+        }
+
+        .submit-btn {
+            background-color: #f0c14b;
+            border: 1px solid #a88734;
+            padding: 8px;
+            width: 100%;
+            margin-top: 15px;
+            cursor: pointer;
+            border-radius: 3px;
+            transition: 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #f0c14b;
+            box-shadow: 0 0 10px #2196f3;
+        }
+
+        .footer-text {
+            font-size: 12px;
+            margin-top: 20px;
+        }
+
+        .footer-text a {
+            color: #0066c0;
+            text-decoration: none;
+        }
+
+        .footer-text a:hover {
+            text-decoration: underline;
+        }
+
+        .logo {
+            display: block;
+            margin: 30px auto 10px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo" class="logo">
+
+    <div class="container">
+        <h2>Create account</h2>
+
+        <form method="POST" action="welcome.html">
+            <label>Your name</label>
+            <input type="text" name="fullname" placeholder="First and last name" required>
+
+            <label>Mobile number or email</label>
+            <input type="text" name="contact" placeholder="Enter mobile number or email" required>
+
+            <label>Password</label>
+            <input type="password" name="password" placeholder="At least 6 characters" minlength="6" required>
+            <small>Passwords must be at least 6 characters.</small>
+
+            <label>Re-enter password</label>
+            <input type="password" name="repassword" placeholder="Re-enter password" required>
+
+            <input type="submit" value="Continue" class="submit-btn">
+        </form>
+
+        <div class="footer-text">
+            By creating an account, you agree to Amazon's
+            <a href="#">Conditions of Use</a> and
+            <a href="#">Privacy Notice</a>.
+        </div>
+
+        <div class="footer-text">
+            Already have an account? <a href="#">Sign in</a>
+        </div>
+
+        <div class="footer-text">
+            Buying for work? <a href="#">Create a free business account</a>
+        </div>
+    </div>
+
+</body>
+</html>
